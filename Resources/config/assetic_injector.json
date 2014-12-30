@@ -1,0 +1,16 @@
+{
+    "require_all":
+    {
+        "javascripts":
+        {
+            "foot": [
+                "@VictoireWidgetMarkdownBundle/Resources/vendor/vue.min.js",
+                "@VictoireWidgetMarkdownBundle/Resources/vendor/marked.min.js"
+            ]
+        },
+        "stylesheets":
+        {
+            "foot": "@VictoireWidgetMarkdownBundle/Resources/style/markdown-widget.less"
+        }
+    }
+}

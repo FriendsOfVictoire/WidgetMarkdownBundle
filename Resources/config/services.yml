@@ -1,0 +1,15 @@
+services:
+    victoire_core.widget_markdown_content_resolver:
+        parent: victoire_core.widget_html_content_resolver
+        tags:
+            - { name: victoire_widget.widget_content_resolver, alias: Markdown }
+
+    #alias to the entity
+    victoire.widget.markdown:
+        class: Victoire\Widget\MarkdownBundle\Entity\WidgetMarkdown
+
+    #alias to the form
+    victoire.widget.form.markdown:
+        class: Victoire\Widget\MarkdownBundle\Form\WidgetMarkdownType
+        tags:
+            - { name: form.type , alias: victoire_widget_form_markdown }

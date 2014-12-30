@@ -1,0 +1,25 @@
+{
+    "name": "victoire/markdown-widget",
+    "type": "symfony-bundle",
+    "description": "Victoire DCMS Markdown widget",
+    "keywords": ["cms", "victoire", "Markdown", "widget"],
+    "homepage": "http://appventus.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leny BERNARD",
+            "email": "leny@appventus.com"
+        }
+    ],
+    "require": {
+        "php"                      : ">=5.3.3",
+        "symfony/framework-bundle" : "~2.3",
+        "victoire/victoire"        : "dev-master",
+        "victoire/Html-widget": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "Victoire\\Widget\\MarkdownBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Victoire/Widget/MarkdownBundle"
+}

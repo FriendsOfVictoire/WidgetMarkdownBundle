@@ -1,0 +1,28 @@
+{% extends 'VictoireWidgetHtmlBundle::new.html.twig' %}
+{% block form_static %}
+
+    <div id="picker-{{ form.mode.vars.data }}" class="vic-tab-pane {% if form.mode.vars.data == widget.mode %}vic-active{% endif %}">
+        {{ form_start(form) }}
+        <div id="markdown-widget-editor" class="vic-row">
+            <div class="vic-col-md-6">
+            {{ form_widget(form.markdown) }}
+            </div>
+            <div v-html="input | marked" data-type="preview" class="vic-col-md-6"></div>
+            {{ form_widget(form.content) }}
+        </div>
+        {{form_rest(form)}}
+        {{ form_end(form) }}
+    </div>
+    <!-- Initialize markdown tool -->
+    <script src="{{ asset("/bundles/victoirewidgetmarkdown/script/markdown-widget.js") }}"></script>
+
+    {# We need to copy the preview in the textarea because of ajax (like ckeditor) #}
+    <script type="text/javascript">
+        $vic(document).on(
+            'victoire_widget_form_create_presubmit victoire_widget_form_update_presubmit',
+            function(event) {
+                $vic('textarea[data-type="output"]').val($vic('[data-type="preview"]').html());
+            }
+        );
+    </script>
+{% endblock form_static %}

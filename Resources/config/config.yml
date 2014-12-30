@@ -1,0 +1,11 @@
+victoire_core:
+    widgets:
+        Markdown:
+            class: "Victoire\\Widget\\MarkdownBundle\\Entity\\WidgetMarkdown"
+            name: Markdown
+            parent: Html
+jms_translation:
+    configs:
+        victoire_markdown_bundle:
+            dirs: ["@VictoireMarkdownBundle"]
+            output_dir: "@VictoireMarkdownBundle/Resources/translations"
