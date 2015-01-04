@@ -16,7 +16,7 @@ class WidgetMarkdown extends WidgetHtml
     /**
      * @var content
      *
-     * @ORM\Column(name="markdown", type="text", length=1000)
+     * @ORM\Column(name="markdown", type="text")
      */
     protected $markdown;
 
