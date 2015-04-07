@@ -1,5 +1,5 @@
 {
-    "name": "victoire/markdown-widget",
+    "name": "appventus/markdown-widget",
     "type": "symfony-bundle",
     "description": "Victoire DCMS Markdown widget",
     "keywords": ["cms", "victoire", "Markdown", "widget"],
