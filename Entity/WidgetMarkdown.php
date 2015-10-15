@@ -1,18 +1,18 @@
 <?php
+
 namespace Victoire\Widget\MarkdownBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Victoire\Widget\HtmlBundle\Entity\WidgetHtml;
 
 /**
- * WidgetMarkdown
+ * WidgetMarkdown.
  *
  * @ORM\Table("vic_widget_markdown")
  * @ORM\Entity
  */
 class WidgetMarkdown extends WidgetHtml
 {
-
     /**
      * @var content
      *
@@ -22,9 +22,9 @@ class WidgetMarkdown extends WidgetHtml
 
     /**
      * To String function
-     * Used in render choices type (Especially in VictoireWidgetRenderBundle)
+     * Used in render choices type (Especially in VictoireWidgetRenderBundle).
      *
-     * @return String
+     * @return string
      */
     public function __toString()
     {
@@ -32,7 +32,7 @@ class WidgetMarkdown extends WidgetHtml
     }
 
     /**
-     * Get markdown
+     * Get markdown.
      *
      * @return string
      */
@@ -40,9 +40,10 @@ class WidgetMarkdown extends WidgetHtml
     {
         return $this->markdown;
     }
-    
+
     /**
-     * Set markdown
+     * Set markdown.
+     *
      * @param string $markdown
      *
      * @return $this
