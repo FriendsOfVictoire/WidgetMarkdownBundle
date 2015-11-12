@@ -1,25 +1,41 @@
 {
-    "name": "friendsofvictoire/markdown-widget",
-    "type": "symfony-bundle",
-    "description": "Victoire DCMS Markdown widget",
-    "keywords": ["DCMS", "Victoire", "widget", "FriendsofVictoire", "FoV", "Dynamic", "CMS", "Markdown"],
-    "homepage": "http://victoire.io",
-    "license": "MIT",
-    "authors": [
+    "name"             : "friendsofvictoire/markdown-widget",
+    "type"             : "symfony-bundle",
+    "description"      : "Victoire DCMS Markdown widget",
+    "keywords"         : [
+        "DCMS",
+        "Victoire",
+        "widget",
+        "FriendsofVictoire",
+        "FoV",
+        "Dynamic",
+        "CMS",
+        "Markdown"
+    ],
+    "homepage"         : "http://victoire.io",
+    "license"          : "MIT",
+    "authors"          : [
         {
-            "name": "Leny BERNARD",
+            "name" : "Leny BERNARD",
             "email": "leny@victoire.io"
         }
     ],
-    "require": {
-        "php"                           : ">=5.3.3",
-        "symfony/framework-bundle"      : "~2.3",
-        "victoire/victoire"             : "~1.3.0",
-        "friendsofvictoire/html-widget" : "~1.3.0"
+    "require"          : {
+        "php"                          : ">=5.3.3",
+        "symfony/framework-bundle"     : "~2.3",
+        "victoire/victoire"            : "~1.3.0",
+        "friendsofvictoire/html-widget": "1.3.x-dev"
     },
-    "autoload": {
-        "psr-0": { "Victoire\\Widget\\MarkdownBundle": "" }
+    "autoload"         : {
+        "psr-0": {
+            "Victoire\\Widget\\MarkdownBundle": ""
+        }
     },
     "minimum-stability": "dev",
-    "target-dir": "Victoire/Widget/MarkdownBundle"
+    "target-dir"       : "Victoire/Widget/MarkdownBundle",
+    "extra"            : {
+        "branch-alias": {
+            "dev-master": "1.3.x-dev"
+        }
+    }
 }
