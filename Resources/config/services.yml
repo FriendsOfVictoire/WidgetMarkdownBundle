@@ -12,4 +12,4 @@ services:
     victoire.widget.form.markdown:
         class: Victoire\Widget\MarkdownBundle\Form\WidgetMarkdownType
         tags:
-            - { name: form.type , alias: victoire_widget_form_markdown }
+            - { name: form.type }
