@@ -13,11 +13,20 @@
         {{form_rest(form)}}
         {{ form_end(form) }}
     </div>
-    <!-- Initialize markdown tool -->
-    <script src="{{ asset("/bundles/victoirewidgetmarkdown/script/markdown-widget.js") }}"></script>
 
     {# We need to copy the preview in the textarea because of ajax (like ckeditor) #}
     <script type="text/javascript">
+
+        new Vue({
+            el: 'form[name="{{ form.vars.name }}"] #markdown-widget-editor',
+            data: {
+                input: '# hello'
+            },
+            filters: {
+                marked: marked
+            }
+        });
+
         $vic(document).on(
             'victoire_widget_form_create_presubmit victoire_widget_form_update_presubmit',
             function(event) {
