@@ -17,19 +17,13 @@
         }
     ],
     "require": {
-        "victoire/victoire": "~1.5",
-        "friendsofvictoire/html-widget": "1.5"
+        "victoire/victoire": ">=2.0.0",
+        "friendsofvictoire/html-widget": ">=2.0.0"
     },
     "autoload": {
         "psr-0": {
             "Victoire\\Widget\\MarkdownBundle": ""
         }
     },
-    "minimum-stability": "dev",
-    "target-dir": "Victoire/Widget/MarkdownBundle",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.5.x-dev"
-        }
-    }
+    "target-dir": "Victoire/Widget/MarkdownBundle"
 }
