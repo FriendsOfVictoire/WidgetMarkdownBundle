@@ -18,7 +18,7 @@
     ],
     "require": {
         "victoire/victoire": ">=2.0.0|~3.0",
-        "friendsofvictoire/html-widget": ">=2.0.0"
+        "victoire/html-widget": ">=2.0.0"
     },
     "autoload": {
         "psr-0": {
